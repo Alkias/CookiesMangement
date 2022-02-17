@@ -1,0 +1,3 @@
+https://github.com/agriffard/TarteAuCitron.OrchardCore.git
+
+https://github.com/L3-iGrant/cookie-mgmnt.git
