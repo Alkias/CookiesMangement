@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mitsos">
+        <div class="col-sm-6 vendor_name" id="${ vendor_list.vendors[ i ].id }" style="padding-top:3px;">
+            <strong>${ vendor_list.vendors[ i ].name }</strong>
+        </div>
+
+        <div class="vendor_toggle text-right col-sm-2" style="margin-top:-20px;">
+            <label class="switch">
+                <input type="checkbox" class="${ vendor_list.vendors[ i ].name }"
+                    id="${ vendor_list.vendors[ i ].name }">
+                <span class="slider round">
+                    <div class="slide-txt">on</div>
+                </span>
+            </label>
+        </div>
+
+        <div class="col-sm-2 text-right arrow">
+            <a class="vendor${ vendor_list.vendors[ i ].id } down" id="${ vendor_list.vendors[ i ].id }"
+                style="cursor:pointer;"></a>
+        </div>
+
+        <div class="col-sm-12">
+            <div class="a${ vendor_list.vendors[ i ].id }" id="vendor_details_drop" style="display:none;">
+                <div>
+                    <div>
+                        <div style="padding-top:5px;"><strong>Policy Url :</strong>
+                            <a style="font-size:10px;" href="${ vendor_list.vendors[ i ].policyUrl }">
+                                <br>${ vendor_list.vendors[ i ].policyUrl }</a>
+                        </div>
+
+                        <div class="vendor_purposes" style="padding-top:5px;"><strong> Purposes : </strong>
+                            <div>${CookiesPerposes( vendor_list, i, cookieSidebarText )}</div>
+                        </div>
+
+                        <div id="vendor_legitimate" style="padding-top:5px;"><strong> Legitimate Interest Purposes :
+                            </strong>
+                            <div>${LegitimatePurposes( vendor_list, i, cookieSidebarText )}</div>
+                        </div>
+
+                        <div class="vendor_purposes" style="padding-top:5px;"><strong> Features : </strong>
+                            <div>${VentorListFutures( vendor_list, i, cookieSidebarText )}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <hr>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
