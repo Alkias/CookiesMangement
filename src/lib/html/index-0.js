@@ -59,51 +59,48 @@ export const BottomBannerHTML =
  */
 export const vendorListHTML = vendor_list => {
   let cookieSidebarText = ''
-  for ( let i = 0; i < vendor_list.vendors.length; i++ ) {
-    let ventor = vendor_list.vendors[ i ];
-
-    cookieSidebarText += 
+  for (let i = 0; i < vendor_list.vendors.length; i++) {
+    cookieSidebarText = cookieSidebarText +
       `<div class="mitsos">
-        <div class="col-sm-6 vendor_name" id="${ ventor.id }" style="padding-top:3px;">
-            <strong>${ ventor.name }</strong>
+        <div class="col-sm-6 vendor_name" id="${ vendor_list.vendors[ i ].id }" style="padding-top:3px;">
+            <strong>${ vendor_list.vendors[ i ].name }</strong>
         </div>
 
         <div class="vendor_toggle text-right col-sm-2" style="margin-top:-20px;">
             <label class="switch">
-                <input type="checkbox" class="${ ventor.name }" id="${ ventor.name }">
-                <span class="slider round"><div class="slide-txt">on</div></span>
+                <input type="checkbox" class="${ vendor_list.vendors[ i ].name }"
+                    id="${ vendor_list.vendors[ i ].name }">
+                <span class="slider round">
+                    <div class="slide-txt">on</div>
+                </span>
             </label>
         </div>
 
         <div class="col-sm-2 text-right arrow">
-            <a class="vendor${ ventor.id } down" id="${ ventor.id }" style="cursor:pointer;"></a>
+            <a class="vendor${ vendor_list.vendors[ i ].id } down" id="${ vendor_list.vendors[ i ].id }"
+                style="cursor:pointer;"></a>
         </div>
 
         <div class="col-sm-12">
-            <div class="a${ ventor.id }" id="vendor_details_drop" style="display:none;">
+            <div class="a${ vendor_list.vendors[ i ].id }" id="vendor_details_drop" style="display:none;">
                 <div>
                     <div>
                         <div style="padding-top:5px;"><strong>Policy Url :</strong>
-                            <a style="font-size:10px;" href="${ ventor.policyUrl }">
-                                <br>${ ventor.policyUrl }</a>
+                            <a style="font-size:10px;" href="${ vendor_list.vendors[ i ].policyUrl }">
+                                <br>${ vendor_list.vendors[ i ].policyUrl }</a>
                         </div>
 
                         <div class="vendor_purposes" style="padding-top:5px;"><strong> Purposes : </strong>
-                            <div>
-                              ${ VentorListCookiesPerposes( vendor_list, i, cookieSidebarText ) }
-                            </div>
+                            <div>${ VentorListCookiesPerposes( vendor_list, i, cookieSidebarText ) }</div>
                         </div>
 
-                        <div id="vendor_legitimate" style="padding-top:5px;"><strong> Legitimate Interest Purposes : </strong>
-                            <div>
-                              ${ VentorListLegitimatePurposes( vendor_list, i, cookieSidebarText ) }
-                            </div>
+                        <div id="vendor_legitimate" style="padding-top:5px;"><strong> Legitimate Interest Purposes :
+                            </strong>
+                            <div>${ VentorListLegitimatePurposes( vendor_list, i, cookieSidebarText ) }</div>
                         </div>
 
                         <div class="vendor_purposes" style="padding-top:5px;"><strong> Features : </strong>
-                            <div>
-                              ${ VentorListFutures( vendor_list, i, cookieSidebarText )}
-                            </div>
+                            <div>${ VentorListFutures( vendor_list, i, cookieSidebarText )}</div>
                         </div>
                     </div>
                 </div>
@@ -125,10 +122,17 @@ export const vendorListHTML = vendor_list => {
   }
 }
 
-export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes, ccmConfig) => {
+export const CookieSidebarVendorAndPurposesHTML = (
+  config,
+  transformedPurposes,
+  ccmConfig
+) => {
   checkAllCookiesAccepted(transformedPurposes, ccmConfig)
 
-  let cookieSidebarText = 
+  let cookieSidebarText = ''
+
+  cookieSidebarText =
+    cookieSidebarText +
   `<div class="col-sm-12" style="padding-top:25px;">
     <h4 class="top-text">${ config[ 'Configuration' ][ 'SidebarSubtitle' ] }</h4>
     <div class="social-plugin col-sm-12">
@@ -166,69 +170,64 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
   // xhr.open("GET", IAB_VENDORS_URL);
   // xhr.send();
 
-  for ( let i = 0; i < vendor_list.vendors.length; i++ ) {
-    let ventor = vendor_list.vendors[ i ];
-    cookieSidebarText += 
+  for (let i = 0; i < vendor_list.vendors.length; i++) {
+    cookieSidebarText = cookieSidebarText +
     `<div class="">
-        <div class="col-sm-6 vendor_name" id="${ ventor.id }${ ventor.name }
-              <strong>${ ventor.name }</strong>
-        </div>
+    <div class="col-sm-6 vendor_name" id="${ vendor_list.vendors[ i ].id }${ vendor_list.vendors[ i ].name }
+          <strong>${ vendor_list.vendors[ i ].name }</strong>
+    </div>
 
-        <div class="vendor_toggle text-right col-sm-2" style="margin-top:-20px;">
-            <label class="switch"> <input type="checkbox" class="${ ventor.name } " id="${ ventor.name }">
-              <span class="slider round"><div class="slide-txt">on</div></span>
-            </label>
-        </div>
+    <div class="vendor_toggle text-right col-sm-2" style="margin-top:-20px;">
+        <label class="switch"> <input type="checkbox" class="${ vendor_list.vendors[ i ].name } " id="${ vendor_list.vendors[ i ].name }">
+          <span class="slider round"><div class="slide-txt">on</div></span>
+        </label>
+    </div>
 
-        <div class="col-sm-2 text-right arrow">
-          <a class="${ ventor.id } down" id="${ ventor.id }" style="cursor:pointer;"></a>
-        </div>
-
-        <div class="col-sm-12">
-          <div class="a${ ventor.id }" id="vendor_details_drop" style="display:none;">
-            
+    <div class="col-sm-2 text-right arrow"><a class="${ vendor_list.vendors[ i ].id } down"
+            id="${ vendor_list.vendors[ i ].id }" style="cursor:pointer;"></a></div>
+    <div class="col-sm-12">
+        <div class="a${ vendor_list.vendors[ i ].id }" id="vendor_details_drop" style="display:none;">
             <div>
-              <div style="padding-top:5px;"><strong>Policy Url :</strong>
-                <a style="font-size:10px;" href="${ ventor.policyUrl }"><br>${ ventor.policyUrl}</a>
-              </div>
-
+                <div style="padding-top:5px;"><strong>Policy Url :</strong>
+                  <a style="font-size:10px;" href="${ vendor_list.vendors[ i ].policyUrl }"><br>${ vendor_list.vendors[ i ].policyUrl}</a>
+                </div>
                 <div class="vendor_purposes" style="padding-top:5px;"><strong> Purposes : </strong>
                     <div>`
 
-                      for (let j = 0; j < ventor.purposeIds.length; j++) {
-                        const purpose = ventor.purposeIds[j]
-                        
-                        for ( let k = 0; k < vendor_list.purposes.length; k++ ) {
+                      for (let j = 0; j < vendor_list.vendors[i].purposeIds.length; j++) {
+                        const purpose = vendor_list.vendors[i].purposeIds[j]
+                        for (let k = 0; k < vendor_list.purposes.length; k++) {
                           if (vendor_list.purposes[k].id === purpose) {
-                            cookieSidebarText += '<div style="font-size:10px;">' + vendor_list.purposes[k].name + '</div>'
+                            cookieSidebarText = cookieSidebarText +
+                              '<div style="font-size:10px;">' + vendor_list.purposes[k].name + '</div>'
                           }
                         }
-
                       }
 
-                    cookieSidebarText += `</div>
+                      cookieSidebarText = cookieSidebarText +
+                    `</div>
                 </div>
 
                 <div id="vendor_legitimate" style="padding-top:5px;" ><strong> Legitimate Interest Purposes : </strong>
                       <div>`
 
-                      for ( let j = 0; j <= vendor_list.vendors[ i ].legIntPurposeIds.length; j++ ) {
-                        
+                      for (let j = 0; j <= vendor_list.vendors[i].legIntPurposeIds.length; j++) {
                         if (vendor_list.vendors[i].legIntPurposeIds.length !== 0) {
-                          const purpose = vendor_list.vendors[ i ].legIntPurposeIds[ j ];
-
+                          const purpose = vendor_list.vendors[i].legIntPurposeIds[j]
                           for (let k = 0; k < vendor_list.purposes.length; k++) {
                             if (vendor_list.purposes[k].id === purpose) {
-                              cookieSidebarText +=  '<div style="font-size:10px;">' + vendor_list.purposes[k].name + '</div>'
+                              cookieSidebarText = cookieSidebarText +
+                                '<div style="font-size:10px;">' + vendor_list.purposes[k].name + '</div>'
                             }
                           }
                         } else if (vendor_list.vendors[i].legIntPurposeIds.length === 0) {
-                          cookieSidebarText +=  '<div style="font-size:10px;">Nill</div>'
+                          cookieSidebarText = cookieSidebarText +
+                            '<div style="font-size:10px;">Nill</div>'
                         }
                       }
 
-                    cookieSidebarText += 
-                    `</div>
+                    cookieSidebarText = cookieSidebarText +
+                 `</div>
               </div>
                 <div class="vendor_purposes" style="padding-top:5px;" ><strong> Features : </strong>
                     <div>`
@@ -244,12 +243,12 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
                             }
                           }
                         } else if (vendor_list.vendors[i].featureIds.length === 0) {
-                          cookieSidebarText += 
+                          cookieSidebarText = cookieSidebarText +
                             '<div style="font-size:10px;">Nill</div>'
                         }
                       }
 
-                      cookieSidebarText += 
+                      cookieSidebarText = cookieSidebarText +
                     `</div>
                   </div>
                 </div>
@@ -261,7 +260,7 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
           </div>`
   }
 
-  cookieSidebarText += 
+  cookieSidebarText = cookieSidebarText +
     `</div>
   </div>
   </div>
@@ -273,7 +272,7 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
     if (transformedPurposes[Object.keys(transformedPurposes)[i]].length === 0)
       continue
 
-    cookieSidebarText += 
+    cookieSidebarText = cookieSidebarText +
       ` <div>
           <div style="display: flex; margin: -1px;">
             <div class="social-plugin col-sm-10" id="purpose_list"><strong>${ Object.keys( transformedPurposes )[ i ] }: </strong>${ CookieTypeDetails[ Object.keys( transformedPurposes )[ i ] ][ 'description' ] }
@@ -282,14 +281,14 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
     const cookiesLength = TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes )[ Object.keys( transformedPurposes )[ i ] ].length
 
     for (let j = 0; j < cookiesLength; j++) {
-      cookieSidebarText += 
+      cookieSidebarText = cookieSidebarText +
         TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes )[ Object.keys( transformedPurposes )[ i ] ][ j ]
       if (j !== cookiesLength - 1) {
-        cookieSidebarText +=  ', '
+        cookieSidebarText = cookieSidebarText + ', '
       }
     }
 
-    cookieSidebarText += 
+    cookieSidebarText = cookieSidebarText +
       `</div>
     </div>
         <div class="toggle text-right" style="padding-top:20px;">
@@ -304,7 +303,7 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
     </div>`
   }
 
-  cookieSidebarText +=  ' </div>'
+  cookieSidebarText = cookieSidebarText + ' </div>'
   document.querySelector('#cookiebar').innerHTML += cookieSidebarText
 
   document.querySelector( '.cookie-accept-all button' ).addEventListener( 'click', () => {
@@ -344,7 +343,7 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
     'Powered by <a href="https://igrant.io/" style="color :rgba(0, 0, 0, 0.733);text-decoration:none;"> <strong>iGrant.io</strong></a>'
 
   let cookieBannerText = ''
-  cookieBannerText += 
+  cookieBannerText = cookieBannerText +
     `<a href="index.html">${ config[ 'Configuration' ][ 'CompanyName' ] }</a> 
         ${ config[ 'Configuration' ][ 'BannerDescription' ] } Please read our <a href="${ config[ 'Configuration' ][ 'CookiePolicyURL' ] }">Cookies Policy</a>  
         and <a href="${ config[ 'Configuration' ][ 'CompanyPolicyURL' ] }">Privacy Policy</a> for details.`
@@ -373,11 +372,13 @@ function VentorListFutures ( vendor_list, i, cookieSidebarText ) {
       let purpose = vendor_list.vendors[ i ].featureIds[ j ];
       for ( let k = 0; k < vendor_list.features.length; k++ ) {
         if ( vendor_list.features[ k ].id === purpose ) {
-          cookieSidebarText +=  '<div style="font-size:10px;">' + vendor_list.features[ k ].name + '</div>';
+          cookieSidebarText = cookieSidebarText +
+            '<div style="font-size:10px;">' + vendor_list.features[ k ].name + '</div>';
         }
       }
     } else if ( vendor_list.vendors[ i ].featureIds.length === 0 ) {
-      cookieSidebarText +=  '<div style="font-size:10px;">Nill</div>';
+      cookieSidebarText = cookieSidebarText +
+        '<div style="font-size:10px;">Nill</div>';
     }
   }
   return cookieSidebarText;
@@ -389,11 +390,13 @@ function VentorListLegitimatePurposes ( vendor_list, i, cookieSidebarText ) {
       const purpose = vendor_list.vendors[ i ].legIntPurposeIds[ j ];
       for ( let k = 0; k < vendor_list.purposes.length; k++ ) {
         if ( vendor_list.purposes[ k ].id === purpose ) {
-          cookieSidebarText +=  '<div style="font-size:10px;">' + vendor_list.purposes[ k ].name + '</div>';
+          cookieSidebarText = cookieSidebarText +
+            '<div style="font-size:10px;">' + vendor_list.purposes[ k ].name + '</div>';
         }
       }
     } else if ( vendor_list.vendors[ i ].legIntPurposeIds.length === 0 ) {
-      cookieSidebarText +=  '<div style="font-size:10px;">Nill</div>';
+      cookieSidebarText = cookieSidebarText +
+        '<div style="font-size:10px;">Nill</div>';
     }
   }
   return cookieSidebarText;
@@ -404,7 +407,7 @@ function VentorListCookiesPerposes ( vendor_list, i, cookieSidebarText ) {
     const purpose = vendor_list.vendors[ i ].purposeIds[ j ];
     for ( let k = 0; k < vendor_list.purposes.length; k++ ) {
       if ( vendor_list.purposes[ k ].id === purpose ) {
-        cookieSidebarText += 
+        cookieSidebarText = cookieSidebarText +
           '<div style="font-size:10px;">' + vendor_list.purposes[ k ].name + '</div>';
       }
     }
