@@ -81,7 +81,17 @@
                     ".Nop.Customer,.Nop.TempData,.Nop.RecentlyViewedProducts,.Nop.Customer,.Nop.ComparedProducts,.Nop.Antiforgery,.Nop.Authentication"
                 ],
                 "IsRequired": true
-            }
+            },
+            {
+                "Title": "Roloikosmima",
+                "CookieTypeName": "Statistics cookies",
+                "Description": "For Statistics",
+                "BrowserCookies": [
+                    "_ga,_gid,"
+                ],
+                "IsRequired": false
+            },
+
         ]
     };
     new CookieConsentManager(config);

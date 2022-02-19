@@ -142,8 +142,7 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
 
 <div class="sidebar-cookie-select col-sm-12"><br>
     <div class="col-sm-12 social-plugin">${ config[ 'Configuration' ][ 'SidebarSubDescription' ] }</div>
-    <div class="cookie-accept-all text-right"><button class="btn btn-default btn-round cookie_sidebar">Allow
-            All</button></div>
+    <div class="cookie-accept-all text-right"><button class="btn btn-default btn-round cookie_sidebar">Allow All</button></div>
     <div class="col-sm-12">
         <hr>
     </div><br>
