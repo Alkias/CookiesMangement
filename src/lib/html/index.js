@@ -216,8 +216,10 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
                         if (vendor_list.vendors[i].legIntPurposeIds.length !== 0) {
                           const purpose = vendor_list.vendors[ i ].legIntPurposeIds[ j ];
 
-                          for (let k = 0; k < vendor_list.purposes.length; k++) {
-                            if (vendor_list.purposes[k].id === purpose) {
+                          for ( let k = 0; k < vendor_list.purposes.length; k++ ) {
+                            
+                            if ( vendor_list.purposes[ k ].id === purpose ) {
+                              let cookies = 
                               cookieSidebarText +=  '<div style="font-size:10px;">' + vendor_list.purposes[k].name + '</div>'
                             }
                           }
@@ -275,14 +277,25 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
     cookieSidebarText += 
       ` <div>
           <div style="display: flex; margin: -1px;">
-            <div class="social-plugin col-sm-10" id="purpose_list"><strong>${ Object.keys( transformedPurposes )[ i ] }: </strong>${ CookieTypeDetails[ Object.keys( transformedPurposes )[ i ] ][ 'description' ] }
-              <div class="cookieUsed" style="padding-top:3px;font-size:10px; ">Cookies Used: `
+            <div class="social-plugin col-sm-10" id="purpose_list"><strong>${ Object.keys( transformedPurposes )[ i ] }: </strong>
+            ${ CookieTypeDetails[ Object.keys( transformedPurposes )[ i ] ][ 'description' ] }
+            <h3>Cookies Used:</h3>`
 
     const cookiesLength = TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes )[ Object.keys( transformedPurposes )[ i ] ].length
 
-    for (let j = 0; j < cookiesLength; j++) {
-      cookieSidebarText += 
-        TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes )[ Object.keys( transformedPurposes )[ i ] ][ j ]
+    for ( let j = 0; j < cookiesLength; j++ ) {
+      let _mitsos = TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes )[ Object.keys( transformedPurposes )[ i ] ][ j ];
+      let _vagelis = TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes );
+      //cookieSidebarText += TransformPurposesToBrowserCookiesArray( config[ 'CookiePurposes' ], CookieTypes )[ Object.keys( transformedPurposes )[ i ] ][ j ]
+
+      let _mitsosFormated = _mitsos.trim().replace( /\,$/, "" ).split( "," );
+      let _cookiesDiv = `<ul>`;
+      for ( let k = 0; k <_mitsosFormated.length; k++ ){
+        _cookiesDiv += `<li>${ _mitsosFormated[k]}</li>`
+      }
+      _cookiesDiv += `</ul>`;
+
+      cookieSidebarText += _cookiesDiv
       if (j !== cookiesLength - 1) {
         cookieSidebarText +=  ', '
       }
@@ -290,7 +303,6 @@ export const CookieSidebarVendorAndPurposesHTML = ( config, transformedPurposes,
 
     cookieSidebarText += 
       `</div>
-    </div>
         <div class="toggle text-right" style="padding-top:20px;">
             <label class="switch"> <input type="checkbox"
                     class="${ Object.keys( transformedPurposes )[ i ].trim().split( ' ' ).join( '-' ) }"
