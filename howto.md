@@ -4,6 +4,8 @@ npm init
 
 
 npm install webpack --save-dev
+or
+npm install webpack  --legacy-peer-deps
 
 https://webpack.js.org/loaders/babel-loader/
 npm install -D babel-loader @babel/core @babel/preset-env webpack

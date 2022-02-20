@@ -1,0 +1,1137 @@
+/*! CSS Used from: https://www.plaisio.gr/bundles/css/plaisio.css?v=jCjO4SSvHmWm-za7dtVp0dVTmHRh6VuHSwyDx_UtakU1 */
+a {
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+a:active,
+a:hover {
+    outline-width: 0;
+}
+
+strong {
+    font-weight: inherit;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+img {
+    border-style: none;
+}
+
+input {
+    font-family: sans-serif;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+input {
+    overflow: visible;
+}
+
+[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    -ms-interpolation-mode: bicubic;
+}
+
+input {
+    font-family: inherit;
+}
+
+div,
+h2,
+p,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: inherit;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+
+strong {
+    font-weight: bold;
+    line-height: inherit;
+}
+
+h2 {
+    font-family: "CFAstyPlaisio-Regular", Georgia, Arial, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: inherit;
+    text-rendering: optimizeLegibility;
+}
+
+h2 {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+@media print,
+screen and (min-width: 40em) {
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+a {
+    line-height: inherit;
+    color: #008cb9;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover,
+a:focus {
+    color: #00789f;
+}
+
+@media print {
+    * {
+        background: transparent !important;
+        box-shadow: none !important;
+        color: black !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
+
+    a[href^='#']:after {
+        content: '';
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2 {
+        page-break-after: avoid;
+    }
+}
+
+input:-ms-input-placeholder {
+    color: #cacaca;
+}
+
+input::placeholder {
+    color: #cacaca;
+}
+
+input:disabled {
+    background-color: #fafafa;
+    cursor: not-allowed;
+}
+
+[type='checkbox'] {
+    margin: 0 0 1rem;
+}
+
+[type='checkbox']+label {
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+[type='checkbox']+label[for] {
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.8;
+    color: #000;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label {
+    font-size: 0.75rem !important;
+    margin-right: 0 !important;
+}
+
+/*! CSS Used from: https://www.plaisio.gr/bundles/css/plaisio-print.css?v=Ke7GHupNgJdSVg931eNvKbWTt81nuPz0ZaE8qP6f8Ww1 ; media=print */
+@media print {
+    @media print {
+        * {
+            transition: unset !important;
+            animation: unset !important;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        a:after {
+            display: none !important;
+        }
+    }
+}
+
+/*! CSS Used from: Embedded */
+@media only screen and (max-width: 900px) {
+    ::-webkit-scrollbar {
+        width: 0px;
+    }
+}
+
+/*! CSS Used from: Embedded */
+#CybotCookiebotDialog {
+    clip: auto;
+    text-rendering: geometricPrecision;
+    animation: none;
+    animation-delay: 0;
+    animation-direction: normal;
+    animation-duration: 0;
+    animation-fill-mode: none;
+    animation-iteration-count: 1;
+    animation-name: none;
+    animation-play-state: running;
+    animation-timing-function: ease;
+    backface-visibility: visible;
+    background: 0;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: transparent;
+    background-color: #ffffff;
+    background-image: none;
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-position-x: 0;
+    background-position-y: 0;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-collapse: separate;
+    border-image: none;
+    border-radius: 0;
+    border-spacing: 0;
+    border-top-color: inherit;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-top-style: none;
+    border-top-width: medium;
+    bottom: auto;
+    box-shadow: none;
+    box-shadow: 2px 2px 14px 2px #121212;
+    caption-side: top;
+    clear: none;
+    color: inherit;
+    color: #000000;
+    column-fill: balance;
+    column-gap: normal;
+    column-rule: medium none currentColor;
+    column-rule-color: currentColor;
+    column-rule-style: none;
+    column-rule-width: none;
+    column-span: 1;
+    columns: auto;
+    content: normal;
+    counter-increment: none;
+    counter-reset: none;
+    cursor: auto;
+    display: inline;
+    empty-cells: show;
+    filter: Alpha(opacity=100);
+    float: none;
+    font: normal;
+    font-family: inherit;
+    font-family: Segoe UI, Arial, Helvetica, Verdana, sans-serif;
+    font-size: medium;
+    font-size: 8pt;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    height: auto;
+    hyphens: none;
+    left: auto;
+    left: 0;
+    letter-spacing: normal;
+    line-height: normal;
+    line-height: 1.231;
+    list-style: none;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: disc;
+    margin: 0;
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    opacity: 1;
+    orphans: 0;
+    outline: 0;
+    outline-color: invert;
+    outline-style: none;
+    outline-width: medium;
+    overflow: visible;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding: 0 0 8px;
+    page-break-after: auto;
+    page-break-before: auto;
+    page-break-inside: auto;
+    perspective: none;
+    perspective-origin: 50% 50%;
+    position: static;
+    position: fixed;
+    right: auto;
+    tab-size: 8;
+    table-layout: auto;
+    text-align: inherit;
+    text-align: left;
+    text-align-last: auto;
+    text-decoration: none;
+    text-decoration-color: inherit;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    top: auto;
+    top: -800px;
+    transform: none;
+    transform-style: flat;
+    transition: none;
+    transition-delay: 0s;
+    transition-duration: 0s;
+    transition-property: none;
+    transition-timing-function: ease;
+    vertical-align: baseline;
+    visibility: visible;
+    white-space: normal;
+    widows: 0;
+    width: auto;
+    width: 100%;
+    word-spacing: normal;
+    z-index: auto;
+    z-index: 2147483645;
+}
+
+#CybotCookiebotDialog,
+#CybotCookiebotDialog:after,
+#CybotCookiebotDialog :after,
+#CybotCookiebotDialog:before,
+#CybotCookiebotDialog :before,
+#CybotCookiebotDialogBody *,
+#CybotCookiebotDialogDetail * {
+    box-sizing: content-box;
+}
+
+#CybotCookiebotDialog a {
+    font-family: Segoe UI, Arial, Helvetica, Verdana, sans-serif;
+    line-height: 1.231;
+}
+
+#CybotCookiebotDialog a,
+#CybotCookiebotDialog a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+#CybotCookiebotDialog div {
+    font-family: Segoe UI, Arial, Helvetica, Verdana, sans-serif;
+    line-height: 1.231;
+}
+
+#CybotCookiebotDialog br,
+#CybotCookiebotDialog td {
+    line-height: 1.231;
+}
+
+#CybotCookiebotDialogDetailBodyContentCookieContainerAdvertising,
+#CybotCookiebotDialogDetailBodyContentCookieContainerNecessary,
+#CybotCookiebotDialogDetailBodyContentCookieContainerPreference,
+#CybotCookiebotDialogDetailBodyContentCookieContainerStatistics,
+#CybotCookiebotDialogDetailBodyContentCookieContainerUnclassified {
+    margin: 0;
+}
+
+#CybotCookiebotDialogPoweredbyLink {
+    height: 36px;
+    margin-left: 6px;
+    margin-right: 0;
+    margin-top: 12px;
+    position: absolute;
+    width: 48px;
+    z-index: 2147483646;
+}
+
+#CybotCookiebotDialogPoweredbyImage {
+    border: none;
+    margin: 2px 0 0 3px;
+    padding: 0;
+    width: 46px;
+}
+
+#CybotCookiebotDialogBody {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 640px;
+    overflow: hidden;
+    padding-left: 0;
+    padding-right: 8px;
+    vertical-align: top;
+}
+
+#CybotCookiebotDialogBodyContent {
+    font-size: 9.5pt;
+    font-weight: 400;
+    line-height: 130%;
+    min-height: 32px;
+    padding: 12px 0 8px 80px;
+}
+
+#CybotCookiebotDialogBodyContentControls {
+    font-family: Segoe UI, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 9.5pt;
+    font-weight: 400;
+    line-height: 130%;
+    min-height: 10px;
+    padding: 12px 0 8px 80px;
+}
+
+.CybotCookiebotDialogBodyContentControlsWrapper {
+    display: inline-block;
+    line-height: 16px;
+    margin-left: 0;
+    margin-right: 14px;
+    position: relative;
+}
+
+#CybotCookiebotDialogBodyContentTitle {
+    color: #000000;
+    display: block;
+    float: none;
+    font-family: Segoe UI, Arial, Helvetica, Verdana, sans-serif;
+    font-size: 12pt;
+    font-weight: 700;
+    letter-spacing: normal;
+    line-height: 100%;
+    margin: 2px 0 6px;
+    padding: 0;
+    position: static;
+    text-align: left;
+    visibility: visible;
+}
+
+#CybotCookiebotDialogBodyContentText {
+    text-align: left;
+}
+
+#CybotCookiebotDialogBodyButtons {
+    display: block;
+    margin: 0 0 6px 6px;
+    padding-left: 63px;
+    padding-right: 0;
+    z-index: 10;
+}
+
+#CybotCookiebotDialogBodyButtons a,
+#CybotCookiebotDialogBodyButtons a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.CybotCookiebotDialogBodyButton {
+    box-sizing: content-box;
+    display: inline-block;
+    font-size: 9.5pt;
+    font-weight: 600;
+    margin-left: 12px;
+    margin-right: 0;
+    margin-top: 8px;
+    min-width: 80px;
+    padding: 2px 4px;
+    text-align: center;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.CybotCookiebotDialogBodyButton:after,
+.CybotCookiebotDialogBodyButton:before {
+    box-sizing: content-box;
+}
+
+#CybotCookiebotDialogBodyButtonAccept {
+    background-color: #15c4a0;
+    border: 1px solid #15c4a0;
+}
+
+#CybotCookiebotDialogBodyButtonDecline {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink,
+#CybotCookiebotDialogBodyLevelDetailsButton {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAMAAAAmGUT3AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkI3NDEyNDEwNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkI3NDEyNDExNzk0MjExRTQ5RUE5RkRFMUQ3MEU1NTZDIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Qjc0MTI0MEU3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Qjc0MTI0MEY3OTQyMTFFNDlFQTlGREUxRDcwRTU1NkMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz70ohqeAAAABlBMVEVgYGAAAAAPhzbbAAAAAnRSTlP/AOW3MEoAAAAjSURBVHjaYmBkYAQBBkYGIAAxQBQcQ/ggCiLFCGFBCIAAAwADkwAg7Yr51AAAAABJRU5ErkJggg==);
+    background-position: right 12px;
+    background-position-x: right;
+    background-position-y: 12px;
+    background-repeat: no-repeat;
+    border-left: 0;
+    border-right: 5px solid transparent;
+    color: #000000;
+    display: inline-block;
+    font-size: 9pt;
+    margin-top: 8px;
+    padding: 7px 19px 0 0;
+    text-align: right;
+    text-decoration: none;
+}
+
+#CybotCookiebotDialogBodyButtons .CybotCookiebotDialogBodyLink:hover,
+#CybotCookiebotDialogBodyLevelDetailsButton:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.CybotCookiebotDialogBodyLevelDetailsButtonExpanded {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAGCAYAAAARx7TFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjU0QzAwODExNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjU0QzAwODEyNzk0MjExRTQ4QzBERTBGMTkxMUY2M0M0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTRDMDA4MEY3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTRDMDA4MTA3OTQyMTFFNDhDMERFMEYxOTExRjYzQzQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz576KdnAAAATklEQVR42kyO2xEAMQgCJZ3afxFcyGRz+uMD3EHdXbYrJSltrz4Dt4UBNfsWPG614oRwO2Q/Eg+IwvnDj8kjk+48MzmZeNYI/4jRPwEGAFy/MS7NcXxJAAAAAElFTkSuQmCC) !important;
+}
+
+a#CybotCookiebotDialogBodyLevelDetailsButton {
+    background-position: right 5px;
+    background-position-x: right;
+    background-position-y: 5px;
+    color: #000000;
+    line-height: 16px;
+    margin: 1px 0 0;
+    padding-left: 4px;
+    padding-top: 0;
+    text-align: left;
+    text-decoration: none;
+}
+
+a#CybotCookiebotDialogBodyLevelDetailsButton:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+#CybotCookiebotDialogBodyButtonDetails {
+    display: inline-block;
+    float: right;
+    outline: none;
+}
+
+#CybotCookiebotDialogBodyButtonDetails:focus,
+#CybotCookiebotDialogBodyLevelDetailsButton:focus {
+    text-decoration: underline;
+}
+
+#CybotCookiebotDialogBodyLevelWrapper {
+    display: none;
+    pointer-events: none;
+    text-align: right;
+}
+
+#CybotCookiebotDialogBodyLevelButtons {
+    float: left;
+    font-size: 9pt;
+    margin-left: 8px;
+    margin-right: 0;
+    pointer-events: auto;
+}
+
+#CybotCookiebotDialogBodyLevelButtonsTable {
+    display: inline-table;
+    margin: 5px 0;
+}
+
+#CybotCookiebotDialogBodyLevelButtonsRow {
+    display: table-row;
+}
+
+#CybotCookiebotDialogBodyLevelButtonsSelectPane {
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 4px 0 0 4px;
+    -moz-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+    display: table-cell;
+    padding: 4px 3px 3px 9px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#CybotCookiebotDialogBodyLevelButtonAcceptWrapper {
+    display: inline-block;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    pointer-events: auto;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonAccept {
+    background-color: #15c4a0;
+    border: 1px solid #15c4a0;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 9.5pt;
+    font-weight: 600;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 6px;
+    min-width: 80px;
+    padding: 3px 10px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonAccept:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper {
+    display: inline-block;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 2px;
+    pointer-events: auto;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll,
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection,
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 9.5pt;
+    font-weight: 600;
+    height: 16px;
+    margin-top: 6px;
+    padding: 2px 4px;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll {
+    background-color: #333333;
+    border: 1px solid #333333;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll {
+    background-color: #15c4a0;
+    border: 1px solid #15c4a0;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    background-color: #188600;
+    border: 1px solid #188600;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowAll:hover,
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover,
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinDeclineAll:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.CybotCookiebotDialogBodyLevelButtonWrapper {
+    display: inline-block;
+    line-height: 16px;
+    margin-left: 0;
+    margin-right: 14px;
+    position: relative;
+}
+
+.CybotCookiebotDialogBodyLevelButtonWrapper:last-of-type {
+    margin-left: 0;
+    margin-right: 7px;
+}
+
+.CybotCookiebotDialogBodyLevelButtonWrapper label {
+    white-space: nowrap;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton {
+    cursor: pointer;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label:after,
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label:before {
+    content: normal;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton+label {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAfSURBVDhPYxhaoJgEjAIwBHCAUY14wFDXSCyGAgYGAFZ4Efmvu6AAAAAAAElFTkSuQmCC);
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: inherit;
+    height: auto;
+    left: 0;
+    line-height: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: 14px;
+    padding: 1px 0 0 17px;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    width: auto;
+    z-index: 1;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked+label {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADYSURBVDhPlZHBDcIwEAS3Ah6g4IBEBXRAIXTAg7ffCKFgix8V0EEqoINUgFIABdAB3tPZWJAQWOkUZ2/Hulzwj4oKq9LBjvcYqTUshqcet/KIO59qD6v0uBCS8mjo2aGabNGYHR4R5MjBl2av5hUWHC2CxuOgrRdoTljqMck41AIQ9LiqLRIwBM4ScFiLGzRz2MTxCL5fbGXNGogwQ7lXWLSaT5L/wjHyIDeXnTnixy7E6IRDcTFcUMzlSkYXzO/Udj9IEc4WVatNfQejuDBeoq9UJ/hrqYAn9gdqnPTA1H8AAAAASUVORK5CYII=);
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: auto;
+    line-height: 16px;
+    min-height: 14px;
+    padding: 1px 0 0 17px;
+    vertical-align: top;
+    width: auto;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton.CybotCookiebotDialogBodyLevelButtonDisabled+label {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVDhPlZAhEoMwEEWj6qpwPUBdVRUOhcJV1VVxgZ4GieaS/BfyZ8I0pemfeROS7MssG/7MRdzFKe4qQ/FLjGmtTi+Q4MnBu4JJLMIiLceLo5wFrVlsRUwuNmnNMwgExAcHjsVOUHCNuy034fYQdw8j0rMLLFOUn81iF0RGTRt5IZPzN3cfs/BBSQYGw4C+iqQk85/kUCTIHhQTdX6KDgPjEaco1pISwgqF8iXhkRBi4QAAAABJRU5ErkJggg==);
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    cursor: default;
+    display: inline-block;
+    height: auto;
+    left: 0;
+    line-height: 16px;
+    min-height: 14px;
+    padding: 1px 0 0 17px;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    width: auto;
+    z-index: 1;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton:focus+label {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAfSURBVDhPYxhaYBMJGAVgCOAAoxrxgKGukVgMBQwMAJF8G9GNgjddAAAAAElFTkSuQmCC);
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: auto;
+    line-height: 16px;
+    min-height: 14px;
+    padding: 1px 0 0 17px;
+    vertical-align: top;
+    width: auto;
+}
+
+input[type=checkbox].CybotCookiebotDialogBodyLevelButton:checked:focus+label {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADbSURBVDhPlZCxDcIwFERvAoRAJAGJCdiAQSjpaGjpaBAKtuiYgA1SpWQDJqCmoGEBWnxf38YCh8BJX0nO96yfwz8alJgWBqveBh212sVwZnEpdrjxqXa7CosjIRmLM726bbpzXLM1Hh7kys6Xw0aNSoy5mgdzi60evcB8j4m+BuUGFQEBLU5qiwR0gYPcaDAT12losPDrEXy/uJaaNeBhhmKvv8Rd80E1q+YacZDNRe9c8aMLMZKwGxbDgnwuVjBSMP9Tj5tBinBUVKU29R30YmG8RD+pJPjrqIAnjdJzEmY21JIAAAAASUVORK5CYII=);
+    background-position: left 1px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: auto;
+    line-height: 16px;
+    min-height: 14px;
+    padding: 1px 0 0 17px;
+    vertical-align: top;
+    width: auto;
+}
+
+#CybotCookiebotDialogBodyLevelDetailsWrapper {
+    background-color: #f5f5f5;
+    border: 1px solid #cccccc;
+    border-left: none;
+    cursor: pointer;
+    display: table-cell;
+    height: 14px;
+    padding: 4px 0 4px 4px;
+    text-align: left;
+    vertical-align: top;
+}
+
+#CybotCookiebotDialogDetail {
+    background-color: #ffffff;
+    display: none;
+    overflow: auto;
+    padding-bottom: 1px;
+    padding-top: 0;
+}
+
+#CybotCookiebotDialogDetailBody {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 632px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#CybotCookiebotDialogDetailBodyContent {
+    background-color: #ffffff;
+    border: solid #cccccc;
+    border-width: 1px 1px 4px;
+    color: #000000;
+    height: 170px;
+}
+
+#CybotCookiebotDialogDetailBodyContent a {
+    font-size: 9pt;
+}
+
+#CybotCookiebotDialogDetailBodyContentTabs a {
+    font-size: 10.5pt;
+}
+
+#CybotCookiebotDialogDetailBodyContentTabs {
+    display: inline-block;
+    height: auto;
+    position: relative;
+    white-space: nowrap;
+}
+
+a.CybotCookiebotDialogDetailBodyContentTabsItem {
+    margin: 0;
+    text-decoration: none !important;
+}
+
+a.CybotCookiebotDialogDetailBodyContentTabsItem:focus,
+a.CybotCookiebotDialogDetailBodyContentTabsItem:hover {
+    background-color: #ffffff !important;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    color: #000000 !important;
+    opacity: .9;
+    text-decoration: none !important;
+}
+
+a.CybotCookiebotDialogDetailBodyContentTabsItemSelected {
+    color: #000000 !important;
+    margin: 0;
+    opacity: 1;
+    text-decoration: none !important;
+}
+
+a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:focus,
+a.CybotCookiebotDialogDetailBodyContentTabsItemSelected:hover {
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    color: #000000 !important;
+    cursor: default;
+    text-decoration: none !important;
+}
+
+.CybotCookiebotDialogDetailBodyContentTabsItem {
+    background: #f5f5f5;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    color: #000000 !important;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 10.5pt;
+    font-weight: 400;
+    line-height: 100%;
+    margin: 1px 0 0;
+    opacity: .85;
+    padding: 7px 18px 5px;
+    position: relative;
+    top: 1px;
+    white-space: normal;
+    z-index: 10;
+}
+
+.CybotCookiebotDialogDetailBodyContentTabsItemSelected {
+    background: #ffffff;
+    border-right: 1px solid #cccccc;
+    border-top: 1px solid #cccccc;
+    color: #000000;
+    display: inline-block;
+    font-size: 10.5pt;
+    font-weight: 400;
+    line-height: 100%;
+    opacity: 1;
+    padding: 8px 18px 6px;
+    position: relative;
+    top: 1px;
+    white-space: normal;
+    z-index: 10;
+}
+
+.CybotCookiebotDialogDetailBodyContentTab:first-child {
+    border-left: 1px solid #cccccc;
+    -webkit-border-radius: 4px 0 0 0;
+    -moz-border-radius: 4px 0 0 0;
+    border-radius: 4px 0 0 0;
+}
+
+.CybotCookiebotDialogDetailBodyContentTab {
+    border-left: none;
+}
+
+#CybotCookiebotDialogDetailFooter {
+    background-color: #ffffff;
+    color: #000000;
+    opacity: .85;
+    padding-right: 2px;
+    padding-top: 4px;
+    text-align: right;
+}
+
+#CybotCookiebotDialogDetailFooter a {
+    color: #000000;
+}
+
+#CybotCookiebotDialogDetailBodyContentTextAbout {
+    display: none;
+    font-size: 9pt;
+    height: 140px;
+    overflow: auto;
+    padding: 18px 12px 12px;
+}
+
+#CybotCookiebotDialogDetailBodyContentTextOverview {
+    display: inline-block;
+}
+
+#CybotCookiebotDialogDetailBodyContentTextIABv2 {
+    word-wrap: break-word;
+    display: none;
+    text-overflow: ellipsis;
+}
+
+#CybotCookiebotDialogDetailBodyContentTabsIABv2,
+#CybotCookiebotDialogDetailBodyContentTextIABv2 {
+    display: none;
+}
+
+#CybotCookiebotDialogDetailBodyContentCookieContainerTypes,
+#CybotCookiebotDialogDetailBodyContentIABv2Tabs {
+    background-color: #f5f5f5;
+    float: left;
+    font-size: 9pt;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#CybotCookiebotDialogDetailBodyContentCookieContainerTypeDetails,
+#CybotCookiebotDialogDetailBodyContentIABv2Details {
+    font-size: 9pt;
+    height: 146px;
+    max-height: 146px;
+    overflow: auto;
+    padding: 12px;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected,
+.CybotCookiebotDialogDetailBodyContentIABv2TabSelected {
+    background-color: #ffffff;
+    border-bottom: 1px solid #cccccc;
+    border-left: none;
+    border-right: 1px solid #ffffff;
+    color: #000000 !important;
+    display: block;
+    padding: 8px;
+    text-decoration: none !important;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieContainerTypes,
+.CybotCookiebotDialogDetailBodyContentIABv2Tab {
+    background-color: #f5f5f5;
+    border-bottom: 1px solid #cccccc;
+    border-left: none;
+    border-right: 1px solid #cccccc;
+    color: #000000 !important;
+    cursor: pointer;
+    display: block;
+    opacity: 1;
+    padding: 8px;
+    text-decoration: none !important;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:first-child {
+    border-top: 1px solid #ffffff;
+}
+
+#CybotCookiebotDialogDetailBodyContentIABv2Tabs a:first-child {
+    border-top: 0;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieContainerTypes label,
+.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected label,
+.CybotCookiebotDialogDetailBodyContentIABv2Tab label,
+.CybotCookiebotDialogDetailBodyContentIABv2TabSelected label {
+    cursor: pointer;
+    display: none;
+    margin: 0;
+}
+
+a.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:focus,
+a.CybotCookiebotDialogDetailBodyContentCookieContainerTypes:hover,
+a.CybotCookiebotDialogDetailBodyContentIABv2Tab:focus,
+a.CybotCookiebotDialogDetailBodyContentIABv2Tab:hover {
+    background: #ffffff !important;
+    border-bottom: 1px solid #cccccc;
+    border-left: none;
+    border-right: 1px solid #cccccc;
+    color: #000000 !important;
+    opacity: 1;
+    text-decoration: none !important;
+}
+
+a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:focus,
+a.CybotCookiebotDialogDetailBodyContentCookieContainerTypesSelected:hover,
+a.CybotCookiebotDialogDetailBodyContentIABv2TabSelected:focus,
+a.CybotCookiebotDialogDetailBodyContentIABv2TabSelected:hover {
+    border-bottom: 1px solid #cccccc;
+    border-left: none;
+    border-right: 1px solid #ffffff;
+    color: #000000 !important;
+    cursor: default;
+    text-decoration: none !important;
+}
+
+#CybotCookiebotDialogDetailBodyContentCookieTabsAdvertising,
+#CybotCookiebotDialogDetailBodyContentCookieTabsPreference,
+#CybotCookiebotDialogDetailBodyContentCookieTabsStatistics,
+#CybotCookiebotDialogDetailBodyContentCookieTabsUnclassified,
+#CybotCookiebotDialogDetailBodyContentIABv2TabFeatures,
+#CybotCookiebotDialogDetailBodyContentIABv2TabPartners {
+    display: none;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieTypeTable {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 9pt;
+    margin: 8px 0 0;
+    padding: 0;
+    width: 100%;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieTypeTable thead th {
+    background-color: #f5f5f5 !important;
+    border-bottom: 1px solid #cccccc;
+    color: #000000 !important;
+    font-weight: 400;
+    padding: 2px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td {
+    border-bottom: 1px solid #cccccc;
+    border-right: 1px solid #f5f5f5;
+    color: #000000 !important;
+    font-size: 9pt;
+    max-width: 72px;
+    overflow: hidden;
+    padding: 4px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.CybotCookiebotDialogDetailBodyContentCookieTypeTable tbody td:last-child {
+    border-right: 0;
+}
+
+.CybotCookiebotDialogBodyContentLabelPersonalInformation {
+    font-weight: 400 !important;
+}
+
+/*! CSS Used from: Embedded */
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    float: left;
+    margin-left: 0;
+    background-color: #15c4a0;
+    padding: 3px 14px;
+    border: none;
+    color: #fff;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection {
+    float: left;
+    margin-left: 0;
+    background-color: #15c4a0;
+    padding: 3px 14px;
+    border: none;
+    color: #fff;
+}
+
+a#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelection:hover {
+    color: #fff;
+}
+
+div#CybotCookiebotDialogBodyLevelButtonLevelOptinAllowallSelectionWrapper {
+    width: 100%;
+    margin-right: -8px;
+}
+
+/*! CSS Used fontfaces */
+@font-face {
+    font-family: 'CFAstyPlaisio-Regular';
+    src: url(https://www.plaisio.gr/assets/fonts/CFAstyPlaisio-Regular.eot);
+    src: url(https://www.plaisio.gr/assets/fonts/CFAstyPlaisio-Regular.eot#iefix) format("embedded-opentype"), url(https://www.plaisio.gr/assets/fonts/CFAstyPlaisio-Regular.woff2) format("woff2"), url(https://www.plaisio.gr/assets/fonts/CFAstyPlaisio-Regular.woff) format("woff"), url(https://www.plaisio.gr/assets/fonts/CFAstyPlaisio-Regular.ttf) format("truetype");
+    font-display: block;
+}
